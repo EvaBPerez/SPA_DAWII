@@ -1,0 +1,79 @@
+<body>
+    
+    <div style="margin: 5%;">
+
+        <div>
+    
+            <h1>Juegos de pokemon</h1>
+            <br><br>
+    
+            <form style="float: left;">
+    
+                <div class="form-group">
+                    <label for="titulo">Nombre del juego: </label><br>
+                    <input type="text" name="titulo" id="titulo" placeholder="Titulo" class="form-coltrol" [(ngModel)]="boxTitulo">
+                    <br><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="titulo">Generación: </label><br>
+                    <input type="text" name="generacion" id="generacion" placeholder="Generacion" class="form-coltrol" [(ngModel)]="boxGeneracion">
+                    <br><br>
+                </div>
+    
+                <div class="form-group">
+                    <label for="titulo">Año de lanzamiento: </label><br>
+                    <input type="text" name="year" id="year" placeholder="Year" class="form-coltrol" [(ngModel)]="boxYear">
+                    <br><br>
+                </div>
+    
+                <div>
+                    <button type="submit" (click)="newJuego()" >Añadir juego</button>
+                </div>
+    
+            </form>
+    
+        </div>
+        <br><br>
+
+
+        <div style="float: right;">
+
+            <h2>Lista de juegos</h2>
+
+        <div style="margin: 5%;">
+            
+            <table>
+                <thead>
+                    <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Nombre del juego
+                    </th>
+                    <th>
+                        Generación
+                    </th>
+                    <th>
+                        Año de lanzamiento
+                    </th>
+                    <th>
+                        Puntuación
+                    </th>
+                    <th>
+                        Agregar puntuación
+                    </th>
+                    </tr>
+                </thead>
+            </table>
+            
+            <app-lista *ngFor="let juego of juegos; let i=index" [juegoLista]="juego" [indexLista]="i"></app-lista>
+        </div>
+
+        </div>
+        
+    
+    </div>
+
+</body>

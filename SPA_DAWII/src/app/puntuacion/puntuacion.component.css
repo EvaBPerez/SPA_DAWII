@@ -1,0 +1,25 @@
+input[type=text] {
+    width: 50%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(173, 216, 202);
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgb(182, 212, 186);
+    border: none;
+    color: rgb(56, 78, 71);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+background-color: rgb(135, 179, 164);
+color: rgb(37, 53, 48);
+}

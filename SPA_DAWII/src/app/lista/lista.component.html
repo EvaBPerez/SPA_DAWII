@@ -1,0 +1,22 @@
+<body>          
+    <table>
+        <td>
+            {{indexLista+1}}
+        </td>
+        <td>
+            {{juegoLista.titulo}}
+        </td>
+        <td>
+            {{juegoLista.generacion}}
+        </td>
+        <td>
+            {{juegoLista.year}}
+        </td>
+        <td>
+            {{puntuacion}} 
+        </td>
+        <td>
+            <app-puntuacion (newPuntuacionEvent)="addPuntuacion($event)"></app-puntuacion>
+        </td>
+    </table>  
+</body>
